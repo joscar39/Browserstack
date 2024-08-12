@@ -1,0 +1,41 @@
+
+Para correr todos los features y obtener reporte allure:
+
+    behave --no-skipped --no-capture
+
+Para correr un solo feature y obtener reporte allure:
+
+    behave .\features\test\<Nombre del archivo feature a ejecutar> --no-skipped --no-capture
+
+Levantar Servidor de pruebas con los resultados
+
+    allure serve allure-results/
+
+Para correr Pruebas bajo la etiqueta de (regression, smoke o integracion) ejecutar:
+
+    behave --tags=@regression --no-skipped --no-capture
+
+Para obtener package y activity_
+
+    correr comando en CMD windows o linux, con la aplicacion abierta en el emulador o dispositivo fisico: adb shell "dumpsys window windows ! grep -E 'mCurrentFocus|mFocusedApp'"
+
+Para Correr todos los test bajo alguna etiqueta desde browserstack
+
+    browserstack-sdk behave --no-skipped --no-capture
+
+Plugins a instalar:
+
+    - tener gherkin Instalado
+
+    - pip install -r requirements.txt
+
+Generar reporte local
+
+allure generate allure-results allure-report --clean --verbosity=verbose
+
+Crear requirements
+
+    pip freeze > <Ruta donde alojara el requeriments>\requirements.txt
+
+    Ejemplo: pip freeze > C:\Users\user\Documents\EpidataSA\appiumassistcardpython\requirements.txt
+

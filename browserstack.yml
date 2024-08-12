@@ -1,0 +1,21 @@
+#userName: testautomatizado_n7vrS1
+#accessKey: PC65sqEdQRqwY2bWGMCe
+
+userName: joscarsosa_ftep5g
+accessKey: iJ95HqZgwqjLM2iwLmqi
+framework: behave
+app: ./resources/app.apk
+platforms:
+  - platformName: android
+    deviceName: Google Pixel 8 Pro
+    platformVersion: 14.0
+    language: Es
+    locale: US
+parallelsPerPlatform: 1
+browserstackLocal: false
+buildName: bstack-demo
+projectName: Demo Browserstack
+buildIdentifier: ${BUILD_NUMBER}
+debug: true
+networkLogs: true
+
